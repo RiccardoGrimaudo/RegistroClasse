@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro di classe</title>
+    <script src="registroclasse.js"></script> <!-- il tag carica un file js esterno -->
+    <link rel="stylesheet" href="style.css">  <!-- il tag carica un file css esterno -->
+    <script src="script.js"></script>         <!-- il tag carica un file js esterno per le interazioni dellla pagina -->
+</head>
+<body>
+    <div class="container">
+        <h1>Registro di classe</h1>
+        
+        <form id="student-form">
+            <label for="nome-input">Nome:</label>
+            <input type="text" id="nome-input" required>
+            
+            <label for="cognome-input">Cognome:</label>
+            <input type="text" id="cognome-input" required>
+            
+            <button type="submit">Aggiungi Studente</button>
+        </form>
+
+        <ul id="student-list"></ul>
+
+        <div id="modifica-studente">
+            <label for="nuovo-nome-input">Nuovo nome:</label>
+            <input type="text" id="nuovo-nome-input">
+            
+            <label for="nuovo-cognome-input">Nuovo cognome:</label>
+            <input type="text" id="nuovo-cognome-input">
+            
+            <button type="button" id="modifica-studente-button">Modifica Studente</button>
+        </div>
+
+        <button type="button" id="rimuovi-studente">Rimuovi Studente</button>
+        <button id="visualizza-studenti">Visualizza studenti</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
